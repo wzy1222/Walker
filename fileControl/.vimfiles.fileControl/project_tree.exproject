@@ -1,0 +1,12 @@
+file filter = c,C,c++,cc,cp,cpp,cxx,h,H,h++,hh,hp,hpp,hxx,inl,ipp,cs,js,as,java,hlsl,vsh,psh,fx,fxh,cg,shd,glsl,py,pyw,pyx,pxd,lua,wlua,vim,uc,m,wiki,ini,cfg,mak,mk,Makefile,makefile,sh,SH,bsh,bash,ksh,zsh,bat,log,err,exe,qrc,pro,pri,i,swg,
+dir filter = 
+
+-[F]fileControl {
+ |-[m]all.makefile
+ |-[l]ex041219.log
+ |-[c]fileControl.cpp
+ |-[h]fileControl.h
+ |-[s]quick_gen_project_fileControl_autogen.sh
+ |-[c]test.cpp }
+
+

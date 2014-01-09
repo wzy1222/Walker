@@ -1,0 +1,10 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+JobDaemon.cpp	../JobDaemon.cpp	1
+JobDaemon.h	../JobDaemon.h	1
+all.makefile	../all.makefile	1
+command.cpp	../command.cpp	1
+command.exe	../command.exe	1
+command.h	../command.h	1
+network.cpp	../network.cpp	1
+network.h	../network.h	1
+quick_gen_project_JobTracker_autogen.sh	../quick_gen_project_JobTracker_autogen.sh	1

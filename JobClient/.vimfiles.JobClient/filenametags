@@ -1,0 +1,7 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+all.makefile	../all.makefile	1
+networkClient.cpp	../networkClient.cpp	1
+networkClient.h	../networkClient.h	1
+quick_gen_project_JobClient_autogen.sh	../quick_gen_project_JobClient_autogen.sh	1
+worker.cpp	../worker.cpp	1
+worker.h	../worker.h	1

@@ -1,0 +1,39 @@
+-- auto-gen settings (DO NOT MODIFY) --
+
+CWD=/root/Walker/JobTracker
+Version=25
+VimEntryName=JobTracker
+VimfilesDirName=.vimfiles.JobTracker
+
+-- ex-plugins File Settings --
+
+LangType=auto
+Project=./.vimfiles.JobTracker/project_tree.exproject
+FilenameList=./.vimfiles.JobTracker/filenamelist
+Tag=./.vimfiles.JobTracker/tags
+ID=./.vimfiles.JobTracker/ID
+Symbol=./.vimfiles.JobTracker/symbol
+Macro=./.vimfiles.JobTracker/macro
+Cscope=./.vimfiles.JobTracker/cscope.out
+Inherits=./.vimfiles.JobTracker/inherits
+Bookmarks=./.vimfiles.JobTracker/bookmarks
+
+vimentryRefs+=
+
+-- ex-plugins Behavior Settings --
+
+RestoreBuffers=false
+AskForRestoration=true
+RestoreInfo=./.vimfiles.JobTracker/restore_info
+
+-- LookupFile Settings --
+
+LookupFileTag=./.vimfiles.JobTracker/filenametags
+
+-- Visual Studio Settings --
+
+vsTaskList=./.vimfiles.JobTracker/vs_task_list
+vsOutput=./.vimfiles.JobTracker/vs_output
+vsFindResult1=./.vimfiles.JobTracker/vs_find_results_1
+vsFindResult2=./.vimfiles.JobTracker/vs_find_results_2
+

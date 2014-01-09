@@ -1,0 +1,9 @@
+../JobDaemon.cpp
+../network.cpp
+../JobDaemon.h
+../command.cpp
+../command.h
+../quick_gen_project_JobTracker_autogen.sh
+../.vimfiles.JobTracker/quick_gen_project_pre_custom.sh
+../.vimfiles.JobTracker/quick_gen_project_post_custom.sh
+../network.h
