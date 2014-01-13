@@ -1,0 +1,11 @@
+#include "Mapper.h"
+
+using namespace std;
+
+int main()
+{
+	Mapper mp("ex041224.log");
+
+	mp.Run();
+	return 0;
+}

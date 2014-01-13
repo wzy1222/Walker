@@ -1,0 +1,8 @@
+#include <iostream>
+#include "mylog.h"
+
+using namespace std;
+
+int main()
+{
+}

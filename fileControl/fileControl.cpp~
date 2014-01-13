@@ -1,12 +1,12 @@
 #include "fileControl.h"
 
-fileControl::fileControl(char *pname)
+fileControl::fileControl(const char *pname)
 {
 	ssize_t len = strlen(pname);
 	if(len >= FILE_NAME_MAX)
 		err_quit("fileControl::fileControl(): file name is too long");
 	strncpy(pfilename, pname, FILE_NAME_MAX - 1);
-	pname[FILE_NAME_MAX - 1] = '\0';	
+	pfilename[FILE_NAME_MAX - 1] = '\0';	
 }
 
 fileControl::~fileControl()
@@ -35,6 +35,7 @@ bool fileControl::splitFile(int nBlock, bool bOneLine)
 	char ch;
 	off_t offadd;
 
+
 	if(bOneLine == false)
 	{
 		for(int i = 0; i < nBlock; ++i)
@@ -55,8 +56,7 @@ bool fileControl::splitFile(int nBlock, bool bOneLine)
 
 		   while(true)
 		   {
-			   ch = read(fd, &ch, 1);
-			   if(ch == -1)
+			   if(-1 == read(fd, &ch, 1))
 				   break;
 			   if(ch != '\n')
 			   {
@@ -117,5 +117,6 @@ bool fileControl::splitFile(int nBlock, bool bOneLine)
 		close(fdout);
 		offpre = offarr[i];
 	}
+    return true;
 }
 

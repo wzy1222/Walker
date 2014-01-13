@@ -1,0 +1,27 @@
+/*
+ * 封装一下 yaolog,用起来舒服一点。
+ */
+
+#ifndef __MYLOG_H
+#define __MYLOG_H
+#include "yaolog.h"
+
+#define LOGID_I  "info"
+#define LOGID_C  "custom"
+#define LOGID_B  "bin"
+#define LOGID_FB "formatted_bin"
+
+// LOG__(LOGID_I, "something");  //use
+class MyLog
+{
+private:
+	MyLog();
+	static MyLog *m_pInstance;
+public:
+	~MyLog();
+	static void Init();
+	static void Exit();
+	static MyLog *GetInstance();
+	static void CleanInstance();
+};
+#endif

@@ -1,11 +1,11 @@
 #include "fileControl.h"
 
-fileControl::fileControl(const char *pname)
+fileControl::fileControl(const char *pName)
 {
-	ssize_t len = strlen(pname);
+	ssize_t len = strlen(pName);
 	if(len >= FILE_NAME_MAX)
 		err_quit("fileControl::fileControl(): file name is too long");
-	strncpy(pfilename, pname, FILE_NAME_MAX - 1);
+	strncpy(pfilename, pName, FILE_NAME_MAX - 1);
 	pfilename[FILE_NAME_MAX - 1] = '\0';	
 }
 
