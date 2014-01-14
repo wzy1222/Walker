@@ -1,0 +1,2 @@
+2014-01-14 15:52:22 NetTransfer.cpp(SendStr,23) [info] -> connfd = 3
+2014-01-14 15:52:22 NetTransfer.cpp(SendFile,53) [info] -> fopen() failed

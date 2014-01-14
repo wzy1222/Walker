@@ -1,4 +1,5 @@
 #include "network.h"
+#include "../NetTransfer/NetTransfer.h"
 
 NetWork::NetWork()
 {
@@ -43,8 +44,15 @@ void NetWork::daemon()
         else    //child
         {
             close(listenfd);
-            Command cmd(connfd);
-            cmd.recvOnce();
+            //Command cmd(connfd);
+            //cmd.recvOnce();
+
+            cout<<"connfd  = "<<connfd<<endl;
+            NetTransfer nt(connfd);
+            nt.Recv();
+
+
+
             close(connfd);
             exit(0);
         }

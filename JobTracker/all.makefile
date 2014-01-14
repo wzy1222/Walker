@@ -1,7 +1,7 @@
+obj = JobDaemon.o  network.o command.o ../Common/my_unp.o ../NetTransfer/NetTransfer.o ../Common/mylog.o ../Common/yaolog.o
 
-
-JobDaemon : JobDaemon.o network.o command.o ../my_unp.o
-	g++ JobDaemon.o network.o command.o ../my_unp.o -o JobDaemon
+JobDaemon : $(obj)
+	g++ $(obj) -lpthread -o JobDaemon
 
 JobDaemon.o : JobDaemon.cpp
 	g++ -c JobDaemon.cpp

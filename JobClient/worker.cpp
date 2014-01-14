@@ -1,10 +1,14 @@
 #include "worker.h"
+#include "../Common/mylog.h"
+
+#include "../NetTransfer/NetTransfer.h"
 
 void mergeCommand(int argc, char **argv, char *buf)
 {
     if(argc == 1)
         err_quit("Usage: worker <sendbuf>\n");
 
+    MyLog::Init();
     for(int i = 1; i < argc; ++i)
         cout<<argv[i]<<endl;
  
@@ -33,7 +37,7 @@ void mergeCommand(int argc, char **argv, char *buf)
 int main(int argc, char **argv)
 {
     char strbuf[MAXLINE];
-    mergeCommand(argc, argv, strbuf);
+    //mergeCommand(argc, argv, strbuf);
 
     NetworkClient network;
     cout<<"start to connect..."<<endl;
@@ -42,8 +46,24 @@ int main(int argc, char **argv)
     else
         cout<<"connect succesful."<<endl;
 
-    network.send(strbuf);
+//    network.send(strbuf);
 
+    sleep(3);
+  
+    cout<<"connfd = "<<network.GetConnfd() <<endl;
+    NetTransfer nt(network.GetConnfd());
 
+    string str = "wzy";
+    if(!nt.SendStr("hello world"))
+        err_quit("failed SendStr()");
+    else
+        cout<<"ok SendStr()"<<endl;
+
+    nt.SendFile("test.txt");
+    
+   
+    sleep(3);
+
+    MyLog::Exit();
     return 0;
 }

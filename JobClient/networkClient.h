@@ -12,7 +12,10 @@
 #include <signal.h>
 #include <sys/wait.h>
 #include <arpa/inet.h>
-#include "../my_unp.h"
+#include "../Common//my_unp.h"
+#include "../NetTransfer/NetTransfer.h"
+#include "../Common/mylog.h"
+#include "../Common/walkerstd.h"
 using namespace std;
 
 class NetworkClient
@@ -27,6 +30,11 @@ public:
 
     int connect();
     void send(char *strbuf);    
+
+    int GetConnfd()
+    {
+        return connfd;
+    }
 };
 
 

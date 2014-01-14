@@ -1,0 +1,6 @@
+2014-01-14 15:22:04 NetTransfer.cpp(Recv,116) [info] -> connfd = 4
+2014-01-14 15:22:07 NetTransfer.cpp(RecvStr,155) [info] -> read lenth failed
+2014-01-14 15:22:07 NetTransfer.cpp(Recv,130) [info] -> the string is 
+2014-01-14 15:22:11 NetTransfer.cpp(RecvFile,212) [info] -> read lenth failed
+2014-01-14 15:22:11 NetTransfer.cpp(Recv,139) [info] -> write File done..
+2014-01-14 15:22:11 NetTransfer.cpp(Recv,122) [info] -> read type failed..n=0
